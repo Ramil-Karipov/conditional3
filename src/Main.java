@@ -11,10 +11,10 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
         System.out.println("Задание 2");
-        int clientOs2 = 1;
-        int clientDeviceYear = 2013;
-        int ios2 = 0;
-        int android2 = 1;
+        int clientOs2 = 0;
+        int clientDeviceYear = 2016;
+        int ios2 = 1;
+        int android2 = 0;
         boolean deviceYear = clientDeviceYear < 2015;
         if (clientOs2 == 1) {
             System.out.println("Установите версию приложения для iOS по ссылке");
