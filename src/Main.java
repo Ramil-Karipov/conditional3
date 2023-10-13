@@ -13,25 +13,25 @@ public class Main {
         System.out.println("Задание 2");
         int clientOs2 = 0;
         int clientDeviceYear = 2016;
-        int ios2 = 1;
-        int android2 = 0;
-        boolean deviceYear = clientDeviceYear < 2015;
-        if (clientOs2 == 1) {
+        boolean ios2 = clientOs2 == 1;
+        boolean android2 = clientOs2 == 0;
+        boolean deviceYear = clientDeviceYear <= 2015;
+        boolean deviceYear1 = clientDeviceYear > 2015;
+        if (ios2 && deviceYear1) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-            if (deviceYear) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            }
-        } else if (clientOs2 == 0) {
+        } else if (ios2 && deviceYear) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        }
+        if (android2 && deviceYear1) {
             System.out.println("Установите версию приложения для Android по ссылке");
-            if (deviceYear) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
+        } else if (android2 && deviceYear) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
         System.out.println("Задание 3");
         int year = 2024;
         if ((year % 4 == 0) && year % 100 != 0) {
             System.out.println(year + " год является високосным");
-        } else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0)) {
+        } else if (year % 400 == 0) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год является не високосным");
@@ -54,37 +54,25 @@ public class Main {
         int monthNumber = 12;
         switch (monthNumber) {
             case 1:
-                System.out.println("Январь");
             case 2:
-                System.out.println("Февраль");
                 System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("Март");
             case 4:
-                System.out.println("Апрель");
             case 5:
-                System.out.println("Май");
                 System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("Июнь");
             case 7:
-                System.out.println("Июль");
             case 8:
-                System.out.println("Август");
                 System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("Сентябрь");
             case 10:
-                System.out.println("Октябрь");
             case 11:
-                System.out.println("Ноябрь");
                 System.out.println("Осень");
                 break;
             case 12:
-                System.out.println("Декабрь");
                 System.out.println("Зима");
                 break;
             default:
