@@ -28,7 +28,7 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
         System.out.println("Задание 3");
-        int year = 2024;
+        int year = 2027;
         if ((year % 4 == 0) && year % 100 != 0) {
             System.out.println(year + " год является високосным");
         } else if (year % 400 == 0) {
