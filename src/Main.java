@@ -28,7 +28,7 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
         System.out.println("Задание 3");
-        int year = 2027;
+        int year = 2024;
         if ((year % 4 == 0) && year % 100 != 0) {
             System.out.println(year + " год является високосным");
         } else if (year % 400 == 0) {
@@ -77,9 +77,22 @@ public class Main {
                 break;
             default:
                 System.out.println("Такого месяца не существует");
-
         }
-
-
+        System.out.println("ВетДоктор");
+        int weightKg = 21;
+        int age = 7;
+        boolean controlAge = age > 6;
+        if (controlAge && weightKg <= 10) {
+            System.out.println("Цена стерилизации вашего питомца = 1500 руб.");
+        } else if (controlAge && weightKg <= 20) {
+            System.out.println("Цена стерилизации вашего питомца = 2000 руб.");
+        } else if (controlAge && weightKg > 20) {
+            System.out.println("Цена стерилизации вашего питомца = 2500 руб.");
+        } else if (age < 6) {
+            System.out.println("Операция по стерилизации производится от шести месяцев");
+        }
     }
 }
+
+
+
